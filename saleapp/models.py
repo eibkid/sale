@@ -2,17 +2,17 @@ from django.db import models
 from datetime import datetime, date
 from django.utils import timezone
 
-
+# items to populate the sales_team choice field
 sales_team = (
     ('anna', 'Anna'), ('bob', 'Bob'), ('charlene', 'Charlene'), ('david', 'David'),
 )
 
-
+# items to populate the contries choice field
 countries = (
     ('united kingdom', 'United Kingdom'), ('france', 'France'), 
     ('germany', 'Germany'), ('netherlands', 'Netherlands'), ('spain','Spain'),
 )
-
+# items to populate the fruits choice field
 fruits = (
     ('apples','Apples'),  ('pears','Pears'), ('strawberries','Strawberries'), ('bananas', 'Bananas'),
 )
