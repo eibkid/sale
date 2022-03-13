@@ -1,5 +1,6 @@
 from django.db import models
 from datetime import datetime, date
+from django.utils import timezone
 
 
 sales_team = (
@@ -22,7 +23,7 @@ fruits = (
 
 
 class Extract(models.Model):
-    date = models.DateTimeField("Today's date(dd/mm/yyyy)", auto_now_add = True)
+    created_date = models.DateTimeField(default=timezone.now, null=True)
     Sales_person =  models.CharField(max_length=100, choices=sales_team)
     Customer_name = models.CharField(max_length=100)
     customer_country = models.CharField(max_length=100, choices=countries)
