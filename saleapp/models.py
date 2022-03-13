@@ -21,9 +21,6 @@ fruits = (
 
 
 
-
-
-
 class Extract(models.Model):
     date = models.DateTimeField("Today's date(dd/mm/yyyy)", auto_now_add = True)
     Sales_person =  models.CharField(max_length=100, choices=sales_team)
